@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+
+
+  <script>
+    function func4() {
+      var p;
+      p = Number(document.getElementById("vesna_tut").value);
+      r = p % 10;
+      document.getElementById("pip").innerHTML = "<h1>" + "Единицы" + "<br>" + r + "</h1>";
+      f = (p - r) / 10;
+      document.getElementById("pop").innerHTML = "<h1>" + "Десятки" + "<br>" + f + "</h1>";
+      g = f + r;
+      document.getElementById("pep").innerHTML = "<h1>" + "Сумма цифр" + "<br>" + g + "</h1>";
+      document.getElementById("poop").innerHTML = "<h1>" + " Произведение цифр" + "<br>" + r*f + "</h1>";
+    }
+  </script>
+
+</head>
+
+
+
+<body>
+  <h1>Задача 2.10</h1> Введите трехзначное число p=
+
+  <input type="text" value="0" id="vesna_tut">
+
+  <button onclick="func4()">2.10</button>
+  <div id="pip"></div>
+
+  <div id="pop"></div>
+
+  <div id="pep"></div>
+
+  <div id="poop"></div>
+
+</body>
+
+
+
+</html>
