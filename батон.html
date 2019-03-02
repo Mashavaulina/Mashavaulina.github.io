@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+<head>
+
+  <link rel="stylesheet" href="style.css">
+
+
+
+
+
+  <script>
+
+    function func4() {
+
+      var p;
+
+      p = Number(document.getElementById("vesna_tut").value);
+
+      r = p % 10;
+      l= (p-r)/10
+      y= r*10 + l
+
+      document.getElementById("pip").innerHTML = "<h1>" + "пееееереееестаанооовкааааафы" + "<br>" + y + "</h1>";
+
+
+
+    }
+
+  </script>
+
+
+
+</head>
+
+
+
+
+
+
+
+<body>
+
+  <h1>Задача 2.11</h1> Введите двузначное число p=
+
+
+
+  <input type="text" value="0" id="vesna_tut">
+
+
+
+  <button onclick="func4()">2.10</button>
+
+  <div id="pip"></div>
+
+
+
+ 
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
